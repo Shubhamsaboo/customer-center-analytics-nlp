@@ -1,4 +1,4 @@
-# Edit this One AI API call using our studio at https://studio.oneai.com/?pipeline=ZYcOR4
+# Import the necessary libraries
 import streamlit as st 
 import requests
 import pandas as pd
