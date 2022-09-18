@@ -17,21 +17,25 @@ st.write('**_This application uses the OneAI API to analyse customer centre data
 st.image('poster.png', use_column_width=True)
 
 # Sample Call Centre Conversation
-conversation = """Customer: Hi, I'm having trouble with my account.
-Agent: Hi, I'm sorry to hear that. What seems to be the problem?
-Customer: I can't log in.
-Agent: I'm sorry to hear that. Can you tell me what happens when you try to log in?
-Customer: I get an error message.
-Agent: What does the error message say?
-Customer: It says my password is incorrect.
-Agent: Can you try resetting your password?
-Customer: I tried that, but it didn't work.
-Agent: I'm sorry to hear that. Can you tell me what happens when you try to reset your password?
-Customer: I get an error message.
-Agent: What does the error message say?
-Customer: It says my password is incorrect.
-Agent: Can you try resetting your password?
-Customer: That worked, thank you."""
+conversation = """
+Customer:
+Hi, I'm having trouble with my account.
+Agent:
+Hi, I'm sorry to hear that. What seems to be the problem?
+Customer:
+I can't log in.
+Agent:
+I'm sorry to hear that. Can you tell me what happens when you try to log in?
+Customer:
+I get an error message.
+Agent:
+What does the error message say?
+Customer:
+It says my password is incorrect.
+Agent:
+Can you try resetting your password?
+Customer: 
+That worked, thank you."""
 
 st.markdown('### **Sample Call Centre Conversation** 📝')
 st.text(conversation)
@@ -42,7 +46,7 @@ st.text(conversation)
 input = st.text_area('Enter the converstation with customer here 👇')
 
 # Select the insights to be returned
-skills = [st.selectbox('Select the intelligence features 🕹', ['summarize', 'names', 'emotions', 'sentiments', 'article-topics'])]
+skills = [st.selectbox('Select an intelligence feature 🕹', ['summarize', 'names', 'emotions', 'sentiments', 'article-topics'])]
 print(skills[0])
 
 # split the input into a list of sentences and store in two lists
@@ -50,6 +54,7 @@ def split_conversation(conversation):
     speakers = []
     utterances = []
     for line in conversation.split('\n'):
+        line = line.rstrip()
         if line.strip():
             if line.endswith(':'):
                 speakers.append(line.strip(':'))
