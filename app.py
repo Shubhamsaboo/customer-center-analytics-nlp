@@ -9,7 +9,7 @@ api_key = st.sidebar.text_input("Type OneAI API Key and press Enter:", type="pas
 st.sidebar.write("Made with ❤️ by [@Saboo_Shubham_](https://twitter.com/Saboo_Shubham_)")
 
 # Set the title of the app
-st.title('🎧 Call Centre Analysis')
+st.title('🎧 Analyze Customer Support Converstaions')
 
 # Set the subtitle of the app
 st.write('**_This application uses the OneAI API to analyse customer centre data._**')  
