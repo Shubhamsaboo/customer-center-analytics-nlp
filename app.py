@@ -9,7 +9,7 @@ api_key = st.sidebar.text_input("Type OneAI API Key and press Enter:", type="pas
 st.sidebar.write("Made with ❤️ by [@Saboo_Shubham_](https://twitter.com/Saboo_Shubham_)")
 
 # Set the title of the app
-st.title('🎧 Analyze Customer Support Converstaions')
+st.title('🎧 Analyze Customer Converstaions')
 
 # Set the subtitle of the app
 st.write('**_This application uses the OneAI API to analyse customer centre data._**')  
@@ -37,10 +37,8 @@ Can you try resetting your password?
 Customer: 
 That worked, thank you."""
 
-st.markdown('### **Sample Call Centre Conversation** 📝')
+st.markdown('### **Sample Conversation** 📝')
 st.text(conversation)
-
-
 
 # Input the text to be analysed
 input = st.text_area('Enter the converstation with customer here 👇')
@@ -61,7 +59,6 @@ def split_conversation(conversation):
             else:
                 utterances.append(line)
     return speakers, utterances
-
 
 
 url = "https://api.oneai.com/api/v0/pipeline"
@@ -139,5 +136,3 @@ if st.button('Analyse'):
 
         for i in range(len(data['output'][0]['labels'])):
             st.code("#"+data['output'][0]['labels'][i]['value'])
-
-        
