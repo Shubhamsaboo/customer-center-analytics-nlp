@@ -4,10 +4,10 @@ import requests
 import pandas as pd
 
 # Get the API key from the user
-api_key = st.sidebar.text_input("Type OneAI API Key and press Enter:", type="password")
+api_key = st.sidebar.text_input("Type One AI API Key and press Enter:", type="password")
 
 st.sidebar.write("Made with ❤️ by [@Saboo_Shubham_](https://twitter.com/Saboo_Shubham_)")
-st.sidebar.write("Powered by [OneAI](https://studio.oneai.com/)")
+st.sidebar.write("Powered by [One AI](https://studio.oneai.com/) & [Streamlit](https://streamlit.io/)")
 
 if api_key:
         
@@ -15,7 +15,7 @@ if api_key:
     st.title('🎧 Analyze Customer Converstaions')
 
     # Set the subtitle of the app
-    st.write('**_This application uses the OneAI API to analyse customer centre data._**')  
+    st.write('**_This application uses the One AI API to analyse customer centre data._**')  
 
     st.image('poster.png', use_column_width=True)
 
@@ -142,5 +142,5 @@ if api_key:
                 
 else:
     st.error("🔑 API Key Not Found!")
-    st.info("💡 Copy paste your OneAI API key that you can find in API Keys section once you log in to the [OneAI Playground](https://studio.oneai.com/)")
+    st.info("💡 Copy paste your One AI API key that you can find in API Keys section once you log in to the [One AI Playground](https://studio.oneai.com/)")
   
