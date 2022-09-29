@@ -142,5 +142,5 @@ if api_key:
                 
 else:
     st.error("🔑 API Key Not Found!")
-    st.info("💡 Copy paste your One AI API key that you can find in API Keys section once you log in to the [One AI Playground](https://studio.oneai.com/)")
+    st.info("💡 Copy paste your One AI API key that you can find in API Keys section once you log in to the [One AI Playground](https://studio.oneai.com/?utm_source=social&utm_medium=medium&utm_campaign=daniel&utm_term=saboo_pub-towardsai-net-detect-business-insights-from-customer-support-conversations-using-ai-b09759144c00)")
   
