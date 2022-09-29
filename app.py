@@ -7,7 +7,7 @@ import pandas as pd
 api_key = st.sidebar.text_input("Type One AI API Key and press Enter:", type="password")
 
 st.sidebar.write("Made with ❤️ by [@Saboo_Shubham_](https://twitter.com/Saboo_Shubham_)")
-st.sidebar.write("Powered by [One AI](https://studio.oneai.com/) & [Streamlit](https://streamlit.io/)")
+st.sidebar.write("Powered by [One AI](https://studio.oneai.com/?utm_source=social&utm_medium=medium&utm_campaign=daniel&utm_term=saboo_pub-towardsai-net-detect-business-insights-from-customer-support-conversations-using-ai-b09759144c00) & [Streamlit](https://streamlit.io/)")
 
 if api_key:
         
